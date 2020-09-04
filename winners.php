@@ -5,17 +5,17 @@ $errors=false;
 $msg="";
 if(isset($_POST["submit_btn"])){
     if(isset($_POST["winners"])){
-    	$winners=$_POST["winners"];
-    	sort($winners);
-		sort($correct_answers);
-		if($winners===$correct_answers){
-			$msg.="<p>Well done. You are correct.</p>";
-		}else{
-			$msg.="<p>Wrong answer.</p>";
-		}
+    	 $winners=$_POST["winners"];
+    	 sort($winners);
+		   sort($correct_answers);
+		   if($winners===$correct_answers){
+			    $msg = $msg."<p>Well done. You are correct.</p>"; //add the string onto the end of msg.
+		   }else{
+			    $msg = $msg."<p>Wrong answer.</p>";
+		   }
     }else{
     	$errors=true;
-		$msg.="<p>You didn't select any teams.</p>";
+		$msg = $msg."<p>You didn't select any teams.</p>";
     }
 }else{
 	$errors=true;
