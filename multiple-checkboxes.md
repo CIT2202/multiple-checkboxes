@@ -1,5 +1,5 @@
 ### Form processing with a group of checkboxes
-One type of form control we haven't looked at in detail so far is the checkbox, specifically a group of checkboxes. Checkboxes allow a user to select multiple options from a list. Here's an example of an HTML form that uses checkboxes:
+One type of form control we haven't looked at is a group of checkboxes. Checkboxes allow a user to select multiple options from a list. Here's an example of an HTML form that uses checkboxes:
 
 ```html
 <form action="process-chkboxes.php" method="post">
@@ -39,4 +39,4 @@ foreach($languages as $language)
 ```
 
 * ```$_POST["languages"]``` is an array. So we need to use a loop to display the values the user has selected.
-* As always the best way to understand this is by running a working example and trying to modify the code e.g. by adding another checkbox to the form or changing the output. 
+* As always the best way to understand this is by running a working example and trying to modify the code e.g. by adding another checkbox to the form or changing the output.
