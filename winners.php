@@ -1,25 +1,25 @@
 <?php
-$correct_answers=["Brazil","Argentina","England","Uruguay"];
+$correct_answers = ["Brazil","Argentina","England","Uruguay"];
 $winners;
-$errors=false;
-$msg="";
+$errors = false;
+$msg = "";
 if(isset($_POST["submit_btn"])){
     if(isset($_POST["winners"])){
-    	 $winners=$_POST["winners"];
+    	 $winners = $_POST["winners"];
     	 sort($winners);
 		   sort($correct_answers);
-		   if($winners===$correct_answers){
-			    $msg = $msg."<p>Well done. You are correct.</p>"; //add the string onto the end of msg.
+		   if($winners === $correct_answers){
+			    $msg .= "<p>Well done. You are correct.</p>";
 		   }else{
-			    $msg = $msg."<p>Wrong answer.</p>";
+			    $msg .= "<p>Wrong answer.</p>";
 		   }
     }else{
-    	$errors=true;
-		$msg = $msg."<p>You didn't select any teams.</p>";
+    	$errors = true;
+	$msg .= "<p>You didn't select any teams.</p>";
     }
 }else{
-	$errors=true;
-	$msg.="<p>You shouldn't have got to this page</p>";
+	$errors = true;
+	$msg .= "<p>You shouldn't have got to this page</p>";
 }
 
 ?>
