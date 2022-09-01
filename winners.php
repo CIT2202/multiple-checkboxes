@@ -1,6 +1,6 @@
 <?php
-$correct_answers=["Brazil","Argentina","England","Uruguay"];
-$winners=$_POST["winners"];
+$correct_answers = ["Brazil","Argentina","England","Uruguay"];
+$winners = $_POST["winners"];
 print_r($winners);
 
 /*
