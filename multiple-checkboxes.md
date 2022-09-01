@@ -20,10 +20,9 @@ One type of form control we haven't looked at is a group of checkboxes. Checkbox
 </form>
 ```
 
-
 This form allows users to select from a list of programming languages.
 * Note that each of the checkboxes has the same value for the name attribute, ```name="languages[]"```.
-* The *name* is followed by square brackets. This tells the browser to send the selected items as a single 'array like value' to the server.
+* The *name* value is followed by square brackets. This tells the browser to send the selected items as a single 'array like value' to the server.
 Here's how we can process this data.
 
 ```php
