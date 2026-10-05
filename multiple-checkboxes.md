@@ -1,4 +1,5 @@
-### Form processing with a group of checkboxes
+# Form processing with a group of checkboxes
+
 One type of form control we haven't looked at is a group of checkboxes. Checkboxes allow a user to select multiple options from a list. Here's an example of an HTML form that uses checkboxes:
 
 ```html
@@ -22,7 +23,7 @@ One type of form control we haven't looked at is a group of checkboxes. Checkbox
 
 This form allows users to select from a list of programming languages.
 * Note that each of the checkboxes has the same value for the name attribute, ```name="languages[]"```.
-* The *name* value is followed by square brackets. This tells the browser to send the selected items as a single 'array like value' to the server.
+* The `name` value is followed by square brackets. This tells the browser to send the selected items as a single 'array like value' to the server.
 Here's how we can process this data.
 
 ```php
@@ -38,4 +39,4 @@ foreach($languages as $language)
 ```
 
 * ```$_POST["languages"]``` is an array. So we need to use a loop to display the values the user has selected.
-* As always the best way to understand this is by running a working example and trying to modify the code e.g. by adding another checkbox to the form or changing the output.
+* As always the best way to understand this is by running a working example and trying to modify the code.

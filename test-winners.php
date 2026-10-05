@@ -1,7 +1,7 @@
 <?php
 $correct_answers = ["Brazil","Argentina","England","Uruguay"];
 $winners = $_POST["winners"];
-print_r($winners);
+var_dump($winners);
 
 /*
 1) Add another checkbox to the form for England. Check this works.
@@ -16,9 +16,12 @@ print_r($winners);
 <html>
 <head>
     <title>PHP and Checkboxes</title>
+     <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <h1>World Cup Winners</h1>
-
+<?php
+//Add your code here
+?>
 </body>
 </html>

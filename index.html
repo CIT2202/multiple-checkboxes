@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>PHP and Checkboxes</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Working with Multiple Checkboxes</h1>
+<form action="test-winners.php" method="post">
+
+<fieldset>
+	<legend>Which of the following countries have won the world cup?</legend>
+  <div>
+    <label for="brazil"><input type="checkbox" name="winners[]" value="Brazil" id="brazil">Brazil</label>
+  </div>
+  <div>
+	<label for="portugal"><input type="checkbox" name="winners[]" value="Portugal" id="portugal">Portugal</label>
+</div>
+<div>
+	<label for="uruguay"><input type="checkbox" name="winners[]" value="Uruguay" id="uruguay">Uruguay</label>
+</div>
+<div>
+	<label for="netherlands"><input type="checkbox" name="winners[]" value="Netherlands" id="netherlands">Netherlands</label>
+</div>
+<div>
+	<label for="argentina"><input type="checkbox" name="winners[]" value="Argentina" id="argentina">Argentina</label>
+</div>
+
+</fieldset>
+<input type="submit" name="submit_btn">
+</form>
+</body>
+</html>
